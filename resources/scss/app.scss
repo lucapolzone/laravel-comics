@@ -1,8 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
-
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 header {
+
   
   .dc-logo {
     height: 4rem;
@@ -15,10 +18,13 @@ header {
   
   nav {
 
-    padding: 1rem 0;
+    padding: 2rem 0;
 
+    ul {
+      list-style-type: none
+    }
+    
     li {
-      display: inline-block;
 
       .link {
         text-decoration: none;
@@ -33,6 +39,12 @@ header {
         color: white;
       }
     }
+
+  }
+
+  .jumbotron {
+    height: 25rem;
+    overflow: hidden;
 
   }
 
