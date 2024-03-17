@@ -9,11 +9,12 @@
   {{-- Faccio un dump per vedere se il dato è passato --}}
   {{-- @dump($comics) --}}
 
-  <div class="row">
+  <div class="row g-4">
     @foreach ($comics as $comic)
       <div class="col-4">
         <div class="card">
-          <h3>{{ $comic['title'] }}</h3>
+          <p>{{ $comic['title'] }}</p>
+          <img src="{{ url($comic['thumb']) }}" alt="">
         </div>
       </div>
     @endforeach
