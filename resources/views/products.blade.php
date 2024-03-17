@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- il figlio estende il padre -->
+@extends('layout.app')
 
-  <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Document</title>
+@section('title', 'Products')
 
-    @vite('resources/js/app.js')
-  </head>
-
-  <body>
-    @include('partials.header')
-    <h1>Products</h1>
-    @include('partials.footer')
-  </body>
-
-</html>
+<!-- si collega allo yield di app.blade.php -->
+@section('main-content')
+  <h1>Products</h1>
+@endsection
