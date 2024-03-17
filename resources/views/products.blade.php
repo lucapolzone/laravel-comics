@@ -12,7 +12,7 @@
 
   <body>
     @include('partials.header')
-    <h1>Homepage</h1>
+    <h1>Products</h1>
     @include('partials.footer')
   </body>
 
