@@ -1,6 +1,9 @@
 <!-- Route::currentRouteName() restituisce il nome della rotta corrente -->
 
 <header class="container d-flex justify-content-center">
+
+  <img src="{{ Vite::asset('/resources/images/dc-logo.png') }}" alt="">
+
   <ul>
     <li>
       <a @class (['link','active' => Route::currentRouteName() == 'home']) href="{{ route('home') }}">Homepage</a>
