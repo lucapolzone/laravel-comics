@@ -1,1 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
+
+li {
+  display: inline-block;
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+  }
+
+  .link.active {
+    background-color: orange;
+  }
+}
