@@ -1,15 +1,39 @@
 @import "~bootstrap/scss/bootstrap";
 
-li {
-  display: inline-block;
 
-  .link {
-    text-decoration: none;
-    color: inherit;
-    padding: 1rem;
+
+header {
+  
+  .dc-logo {
+    height: 4rem;
   }
 
-  .link.active {
-    background-color: orange;
+  .top-bar {
+    height: 1rem;
+    background-color: #0c7cec;
   }
+  
+  nav {
+
+    padding: 1rem 0;
+
+    li {
+      display: inline-block;
+
+      .link {
+        text-decoration: none;
+        color: inherit;
+        padding: 0.4rem 0.6rem;
+        margin: 0 0.5rem;
+        border-radius: 15px;
+      }
+
+      .link.active {
+        background-color: #0c7cec;
+        color: white;
+      }
+    }
+
+  }
+
 }
