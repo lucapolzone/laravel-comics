@@ -5,7 +5,7 @@
 
 <!-- si collega allo yield di app.blade.php -->
 @section('main-content')
-  <h1>Products</h1>
+  {{-- <h1>Products</h1> --}}
   {{-- Faccio un dump per vedere se il dato è passato --}}
   {{-- @dump($comics) --}}
 
