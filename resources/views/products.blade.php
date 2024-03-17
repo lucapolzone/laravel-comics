@@ -11,10 +11,10 @@
 
   <div class="row g-4">
     @foreach ($comics as $comic)
-      <div class="col-4">
+      <div class="col-2">
         <div class="card">
-          <p>{{ $comic['title'] }}</p>
           <img src="{{ url($comic['thumb']) }}" alt="">
+          <p>{{ $comic['title'] }}</p>
         </div>
       </div>
     @endforeach
