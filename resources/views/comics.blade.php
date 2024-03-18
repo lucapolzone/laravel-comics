@@ -9,16 +9,30 @@
   {{-- Faccio un dump per vedere se il dato è passato --}}
   {{-- @dump($comics) --}}
 
-  <div class="row g-4">
-    @foreach ($comics as $comic)
-      <div class="col-2">
-        <div class="card">
-          <img src="{{ url($comic['thumb']) }}" alt="">
-          <p>{{ $comic['title'] }}</p>
+  {{-- <section class="content-section"> --}}
+    <div class="container">
+      <button class="btn btn-primary" id="current-series">CURRENT SERIES</button>
+      
+      <div class="row g-4">
+        @foreach ($comics as $comic)
+        <div class="col-2">
+          <div class="card">
+            <div class="wrapper-image">
+              <img src="{{ url($comic['thumb']) }}" alt="">
+            </div>
+            <p>{{ $comic['title'] }}</p>
+          </div>
         </div>
+        @endforeach
       </div>
-    @endforeach
-  </div>
+    </div>
+
+    <div class="container text-center">
+      <button class="btn btn-primary" id="load-more">LOAD MORE</button>
+    </div>
+      
+  {{-- </section> --}}
+
 
 
 @endsection
