@@ -10,6 +10,11 @@ body {
   padding: 0.8rem;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 header {
 
   
@@ -23,12 +28,7 @@ header {
   }
   
   nav {
-
     padding: 2rem 0;
-
-    ul {
-      list-style-type: none
-    }
     
     li {
 
@@ -56,7 +56,7 @@ header {
 
 }
 
-.content-section {
+#content-section {
   padding: 2rem 0;
   background-color: #1c1c1c;
   position: relative;
@@ -90,7 +90,22 @@ header {
     }
 
     p {
+      padding-top: 1rem;
       color: white;
     }
+  }
+}
+
+#blue-ribbon {
+  background-color: #0c7cec;
+  color: white;
+  padding: 2rem 0;
+
+  img {
+    height: 55px;
+  }
+
+  span {
+    padding-left: 1rem;
   }
 }

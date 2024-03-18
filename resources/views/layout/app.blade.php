@@ -17,10 +17,12 @@
 
   @include('partials.header')
 
-  <section class="content-section">
+  <section id="content-section">
     @yield('main-content')
   </section>
   
+  @include('partials.blue-ribbon')
+
   @include('partials.footer')
   
 </body>
