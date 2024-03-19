@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// path del file PageController.php
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,56 +15,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('home');
-})->name('home');
+Route::get('/', [PageController::class,'index'])->name('home');
 
-Route::get('/comics', function () {
-  $comics = config('comics');
+Route::get('/comics', [PageController::class,'comics'])->name('comics');
 
-  return view('comics', compact('comics'));
-})->name('comics');
+Route::get('/about', [PageController::class,'about'])->name('about');
 
-Route::get('/about', function () {
-  return view('about');
-})->name('about');
+Route::get('/contacts', [PageController::class,'contacts'])->name('contacts');
 
-Route::get('/contacts', function () {
-  return view('contacts');
-})->name('contacts');
+Route::get('/movies', [PageController::class,'movies'])->name('movies');
 
-Route::get('/movies', function () {
-  return view('movies');
-})->name('movies');
+Route::get('/tv', [PageController::class,'tv'])->name('tv');
 
-Route::get('/tv', function () {
-  return view('tv');
-})->name('tv');
+Route::get('/games', [PageController::class,'games'])->name('games');
 
-Route::get('/games', function () {
-  return view('games');
-})->name('games');
+Route::get('/collectibles', [PageController::class,'collectibles'])->name('collectibles');
 
-Route::get('/collectibles', function () {
-  return view('collectibles');
-})->name('collectibles');
+Route::get('/videos', [PageController::class,'videos'])->name('videos');
 
-Route::get('/videos', function () {
-  return view('videos');
-})->name('videos');
+Route::get('/fans', [PageController::class,'fans'])->name('fans');
 
-Route::get('/fans', function () {
-  return view('fans');
-})->name('fans');
+Route::get('/news', [PageController::class,'news'])->name('news');
 
-Route::get('/news', function () {
-  return view('news');
-})->name('news');
+Route::get('/shop', [PageController::class,'shop'])->name('shop');
 
-Route::get('/shop', function () {
-  return view('shop');
-})->name('shop');
-
-Route::get('/characters', function () {
-  return view('characters');
-})->name('characters');
+Route::get('/characters', [PageController::class,'characters'])->name('characters');

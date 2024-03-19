@@ -17,6 +17,10 @@
         <img src="{{ Vite::asset('/resources/images/buy-comics-subscriptions.png') }}" class="" alt="">
         <span>COMIC SHOP LOCATOR</span>
       </li>
+      <li>
+        <img src="{{ Vite::asset('/resources/images/buy-dc-power-visa.svg') }}" class="" alt="">
+        <span>DC POWER VISA</span>
+      </li>
     </ul>
   </div>
 </div>

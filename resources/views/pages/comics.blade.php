@@ -33,6 +33,8 @@
       
   {{-- </section> --}}
 
+  @include('partials.blue-ribbon')
 
 
 @endsection
+

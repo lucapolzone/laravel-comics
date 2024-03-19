@@ -21,7 +21,6 @@
     @yield('main-content')
   </section>
   
-  @include('partials.blue-ribbon')
 
   @include('partials.footer')
   
