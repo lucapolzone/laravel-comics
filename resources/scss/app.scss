@@ -4,6 +4,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   font-weight: bold;
   border-radius: 0;
@@ -14,6 +18,11 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.mini-title {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 header {
@@ -34,7 +43,6 @@ header {
     li {
 
       .link {
-        text-decoration: none;
         color: inherit;
         padding: 0.4rem 0.6rem;
         margin: 0 0.5rem;
@@ -113,15 +121,76 @@ header {
 }
 
 
+#comic-detail-section {
+  // color: white;
+
+
+  
+  .wrapper-comic {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #a5a5a5;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    height: 500px;
+    margin: 2rem 0;
+  }
+
+
+}
+
+
 footer {
   color: white;
+
+  .wrapper {
+    margin-right: 4rem;
+  }
+
+  .wrapper-image {
+    height: 250px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  li {
+    color: #a5a5a5;
+
+    .mini-title {
+      display: inline-block;
+      color: white;
+      margin-bottom: 5px;
+    }
+  }
+
   .top-bar {
     background-image: url('/resources/images/footer-bg.jpg');
     padding: 1rem;
   }
 
   .bottom-bar {
-    background-color: #1c1c1c;
+    background-color: #303030;
     padding: 1rem;
+
+      button {
+        color: white;
+      }
+
+      .mini-title {
+        color: #0c7cec;
+        padding-top: 5px;
+      }
+
+      li {
+        padding: 0 5px;
+      }
   }
 }
