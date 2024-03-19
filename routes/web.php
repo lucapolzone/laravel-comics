@@ -18,6 +18,7 @@ use App\Http\Controllers\PageController;
 Route::get('/', [PageController::class,'index'])->name('home');
 
 Route::get('/comics', [PageController::class,'comics'])->name('comics');
+Route::get('/comic-detail', [PageController::class,'comicDetail'])->name('comic-detail');
 
 Route::get('/about', [PageController::class,'about'])->name('about');
 

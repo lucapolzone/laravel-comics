@@ -1,7 +1,7 @@
 <!-- il figlio estende il padre -->
 @extends('layout.app')
 
-@section('title', 'Products')
+@section('title', 'Comics')
 
 <!-- si collega allo yield di app.blade.php -->
 @section('main-content')
