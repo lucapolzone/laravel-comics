@@ -5,12 +5,12 @@
 
 <!-- si collega allo yield di app.blade.php -->
 @section('main-content')
-  <h1>Comic detail: {{ $comic['title'] }}</h1>
+  <h1 style="color: red">Comic detail: {{ $comic['title'] }}</h1>
 
   <div class="wrapper-image">
     <img src="{{ url($comic['thumb']) }}" alt="">
   </div>
-  <p>{{ $comic['series'] }}</p>
+  <h2 style="color: orange">{{ $comic['series'] }}</h2>
 
 @endsection
 

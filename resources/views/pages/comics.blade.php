@@ -18,7 +18,9 @@
         <div class="col-2">
           <div class="card">
             <div class="wrapper-image">
-              <img src="{{ url($comic['thumb']) }}" alt="">
+              <a href="{{ route('comic-detail') }}">
+                <img src="{{ url($comic['thumb']) }}" alt="">
+              </a>
             </div>
             <p>{{ $comic['title'] }}</p>
           </div>
