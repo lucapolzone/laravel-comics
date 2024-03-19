@@ -14,11 +14,13 @@
       <button class="btn btn-primary" id="current-series">CURRENT SERIES</button>
       
       <div class="row g-4">
-        @foreach ($comics as $comic)
+        @foreach ($comics as $index => $comic)
         <div class="col-2">
           <div class="card">
             <div class="wrapper-image">
-              <a href="{{ route('comic-detail') }}">
+              <a href="{{ route('comic-detail', [
+                'index' => $index
+              ]) }}">
                 <img src="{{ url($comic['thumb']) }}" alt="">
               </a>
             </div>
